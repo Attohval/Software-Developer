@@ -40,7 +40,7 @@ h6 {
     font-size: 12px;
 }
 
-.active {
+.active-page {
     color: var(--secondary-bg);
     text-decoration: underline;
 }
@@ -372,6 +372,7 @@ textarea {
 
     .navbar {
         padding: 16px 32px;
+        box-shadow: 5px 0px 5px var(--secondary-bg);
     }
     
     .section {
@@ -416,6 +417,14 @@ textarea {
         font-size: 40px;
     }
 
+    h4 {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 64px 16px 0;
+    }
+
     .about {
         flex-direction: column;
         align-items: center;
@@ -427,17 +436,23 @@ textarea {
 
     .info {
         width: 100%;
-        margin: 32px 0;
+        /* margin: 32px 0; */
+        order: 2;
     }
 
     .about-btn {
         margin-top: 32px;
+        padding: 0 32px;
+        justify-content: space-between;
     }
 
     .project-card {
         flex-direction: column;
     }
 
+    .project-card .image-card {
+        margin: unset;
+    }
     .project-card .image {
         width: 100%;
     }
