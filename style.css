@@ -84,6 +84,12 @@ h6 {
     z-index: 1000;
 }
 
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
@@ -174,6 +180,7 @@ h6 {
 .project-card {
     width: 100%;
     display: flex;
+    gap: 16px;
     justify-content: space-between;
     margin: 40px 0;
 }
@@ -256,6 +263,7 @@ h6 {
 .contact {
     border-top-left-radius: 64px;
     border-top-right-radius: 64px;
+    margin-top: 64px;
     background: linear-gradient(to right, #4719de, #0d8dee);
 }
 
@@ -336,4 +344,166 @@ textarea {
 
 .footer .logo {
     color: var(--secondary-text);
+}
+
+/* responsive design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 64px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary-bg);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 32px
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 16px 32px;
+    }
+    
+    .section {
+        padding: 64px 32px 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 890px) {
+    .image {
+        width: 300px;
+    }
+
+    .info {
+        width: 300px;
+    }
+    .service-card {
+        width: 300px;
+    }
+
+    .contact-info {
+        width: 312px;
+    }
+
+    .project-card .image-card{
+        border: unset;
+    }
+
+    .project-card .image {
+        width: 300px;
+        position: unset;
+        left: unset;
+        bottom: unset;
+    }
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin: 32px 0;
+    }
+
+    .about-btn {
+        margin-top: 32px;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card .image {
+        width: 100%;
+    }
+
+    .experience {
+        padding: 0 16px;
+    }
+
+    .experience img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 350px;
+        margin-top: 32px;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .service-card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 620px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .image {
+        width: 300px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
 }

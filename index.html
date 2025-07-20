@@ -13,6 +13,7 @@
     <!-- Navbar -->
      <header class="navbar">
         <div><a class="logo" href="index.html">VTECH</a></div>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="ri-menu-line"></i></div>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#about">ABOUT ME</a></li>
@@ -85,7 +86,7 @@
                 </div>
 
                 <div class="info">
-                    <h3>PROJECT 1</h3>
+                    <h3>PROJECT 2</h3>
                     <H2>Dating Mobile App Design</H2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod nostrum libero nam ad saepe aperiam iure error! Fugit soluta rerum sapiente ex deserunt repellendus totam mollitia saepe, magni minus modi omnis, repellat eum deleniti eaque reprehenderit iste! Ullam, repellat odit quos ut omnis rem modi beatae maxime magni nemo.</p>
@@ -97,7 +98,7 @@
 
             <div class="project-card">
                 <div class="info">
-                    <h3>PROJECT 1</h3>
+                    <h3>PROJECT 3</h3>
                     <H2>Dating Mobile App Design</H2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod nostrum libero nam ad saepe aperiam iure error! Fugit soluta rerum sapiente ex deserunt repellendus totam mollitia saepe, magni minus modi omnis, repellat eum deleniti eaque reprehenderit iste! Ullam, repellat odit quos ut omnis rem modi beatae maxime magni nemo.</p>
@@ -117,7 +118,7 @@
                 </div>
 
                 <div class="info">
-                    <h3>PROJECT 1</h3>
+                    <h3>PROJECT 4</h3>
                     <H2>Dating Mobile App Design</H2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod nostrum libero nam ad saepe aperiam iure error! Fugit soluta rerum sapiente ex deserunt repellendus totam mollitia saepe, magni minus modi omnis, repellat eum deleniti eaque reprehenderit iste! Ullam, repellat odit quos ut omnis rem modi beatae maxime magni nemo.</p>
@@ -200,7 +201,6 @@
                     <button class="btn">Send</button>
                 </form>
             </div>
-
             <footer class="footer">
                 <div><a class="logo" href="index.html">VTECH</a></div>
                 <h6>&copy 2025-Vtech, All rights reserved</h6>
@@ -211,11 +211,13 @@
                       <i class="ri-github-line icon"></i>
                        <i class="ri-whatsapp-line icon"></i>
                 </div>
-
             </footer>
-
-
        </section>
     
+       <script> 
+            function toggleMenu() {
+                document.querySelector('.nav-links').classList.toggle('active');
+            }
+       </script>
 </body>
 </html>
