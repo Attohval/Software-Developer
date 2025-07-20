@@ -203,6 +203,10 @@ h6 {
     bottom: 40px;
 }
 
+.ri-arrow-right-fill {
+    color: var(--secondary-bg);
+}
+
 /* services */
 .services {
     display: flex;
